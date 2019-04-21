@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">路线规划</string>
+    <string name="about">
+        　　\t\t\t\t\t\t
+        -------安徽农业大学-------\n
+    \t\t\t\t\t\t物联网工程１班徐锐毕业设计
+    </string>
+
+    <string name="use">使用说明 : \n
+        \t\t1,先科普地理常识：\n
+        全球经纬度的取值范围：纬度-90~90，经度-180~180 中国的经纬度范围大约为：纬度3.86~53.55，
+        经度73.66~135.05。\n
+        \t\t2,本软件仍在测试中使用。\n
+        \t\t3,软件基于百度地图SDK开发而成。\n
+        \t\t4,在起始终点框输入的是当前城市的地名。\n
+  　　\t\t\t\t\t\t\t最后感谢您的使用</string>
+
+    <string name="gengxin">版本: v1.1\n
+        \t\t\t\tv1.0----实现 \n
+        \t\t\t\tv2.0----实现 \n
+        \t\t\t\tv3.0----实现 \n
+        \t\t\t\tv4.0----实现 \n
+        \t\t\t\tv5.0----实现 \n
+        \t\t\t\tv6.0----实现 \n
+        \t\t\t\tv7.0----实现支付宝接口API调用及支付的功能\n</string>
+    <string name="chuangzuo">版权归本人所有</string>
+    <string name="moreinfo">1.本页面旨在使骑行者能够有效的将车辆停到合理的区域，并能够为社区停车做出自己的一份贡献，当然
+        如果你well done，我们也会献上宝贵的物质奖励。\n
+        \t\t\t\t(1).如果所停位置为我们已规定的位置，且数量在非饱和状态（看牌子），则依据程度给予积分奖励，反之扣分。\n
+        \t\t\t\t(2).如果您能为我们提供合理的区域作为车辆停放需求的新的聚点，按照地址（经纬度）+停放数量的格式截二维码图发送到微信公众号，
+           则经系统内部审核通过后给予积分奖励，如果信息有假，我们将按照相关程序实施扣分及其他处罚。\n\n
+        2.如果你对软件有什么建议或意见，欢迎与我联系，QQ：3109197311。\n\n
+        3.如果你对我们的idea有好的补充，以及更多关于停车活动的奖励机制，请关注我的公众号：愈挫愈勇onlythestrongsurvive(~~~~长按复制)\n</string>
+    <string-array name="drive_strategy">
+        <item>躲避拥堵</item>
+        <item>最短距离</item>
+        <item>较少费用</item>
+        <item>时间优先</item>
+    </string-array>
+
+    <!-- 软件使用对象 -->
+    <string-array name="user_mode">
+        <item>员工模式</item>
+        <item>管理者模式</item>
+    </string-array>
+    <string-array name="num_date">
+        <item>一天</item>
+        <item>一周</item>
+        <item>一月</item>
+    </string-array>
+    <string-array name="num_person">
+        <item>每人</item>
+    </string-array>
+   　<!--驾车方式-->
+    <string-array name="travel_way">
+        <item>自驾</item>
+        <item>打车</item>
+        <item>租车</item>
+        <item>公交</item>
+    </string-array>
+
+   <!--TextView名词说明 -->
+    <string name="tv_user_mode">使用模式：</string>
+    <string name="tv_bus_id">公交车路线名称：</string>
+    <string name="tv_cityname">城市名称：</string>
+    <string name="tv_realm_station">请先确定要勘察的基站</string>
+    <string name="tv_station_explanation">站点的模式介绍</string>
+    <string name="tv_vehicle_type">工具选择：</string>
+    <string name="tv_travel_mode">出行模式选择：</string>
+    <string name="tv_travel_way">最佳出行方式推荐：</string>
+    <string name="tv_start_date">请选择出发日期</string>
+    <string name="tv_start_time">请选择出发时间</string>
+    <string name="tv_remenber_sec">记住密码</string>
+    <string name="tv_secret">密码：</string>
+    <string name="tv_login">登陆</string>
+    <string name="tv_account">账户：</string>
+    <string name="tv_onroute_basicinfo">您并未选择相关的时间或出行模式信息（默认是工程优先）出发时间：7:30 出行方式：自驾</string>
+    <string name="tv_onroute_route">路线信息</string>
+    <string name="tv_onroute_expenseinfo">共计费用为：</string>
+    <string name="tv_onroute_other_explanation">使用说明</string>
+    <string name="tv_reward">奖励：</string>
+
+    <!--Button名称解释 -->
+    <string name="worker_mode">使用者模式</string>
+    <string name="manager_mode">管理者模式</string>
+    <string name="btn_nextline">下一条线路</string>
+    <string name="btn_bus_id_search">公交线路查询</string>
+    <string name="btn_explanation_drive">自驾</string>
+    <string name="btn_explanation_bus">公交</string>
+    <string name="btn_explanation_showstation">站点显示</string>
+    <string name="btn_work_starttime">出发时间</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_next_station">下一基站点</string>
+    <string name="btn_routeinfo">详情了解</string>
+
+    <!--navigationView说明-->
+    <string name="id_mail">123456@qq.com</string>
+    <string name="my_parse">我的钱包</string>
+    <string name="my_performance">我的精彩</string>
+    <string name="com_info">公司消息</string>
+    <string name="use_explanation">使用说明</string>
+    <string name="version_improve">版本更新</string>
+    <string name="show_station">显示站点</string>
+    <string name="project_first">工程优先</string>
+    <string name="money_first">费用优先</string>
+    <string name="tv_cost_maintain">人工成本：</string>
+    <string name="edt_start_worktime">7时30分</string>
+    <string name="edt_drivebyself">自驾</string>
+    <!--radio_bt说明-->
+    <string name="rb_tocounty">下县</string>
+    <string name="rb_incity">市内</string>
+    <string name="reaward">奖励：</string>
+    <string name="tv_problem">单击问号，补充问题</string>
+
+
+</resources>

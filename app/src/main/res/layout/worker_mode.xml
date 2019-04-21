@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="@string/tv_realm_station"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_show"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        <Spinner
+            android:id="@+id/spinner_sheng"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:popupBackground="@color/green"
+            android:spinnerMode="dialog"     />
+        <Spinner
+            android:id="@+id/spinner_shi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:popupBackground="@color/green"
+            android:spinnerMode="dialog"
+            />
+        <Spinner
+            android:id="@+id/spinner_qu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:popupBackground="@color/green"
+            android:spinnerMode="dialog"
+            />
+        <Spinner
+            android:id="@+id/spinner_dian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:popupBackground="@color/green"
+            android:spinnerMode="dialog"
+            />
+
+    </LinearLayout>
+
+     <ScrollView
+         android:id="@+id/scroll_text"
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_below="@+id/tv_show"
+         android:layout_toRightOf="@+id/layout_select"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="@dimen/worker_mode_20dp"
+         android:background="@color/green">
+
+         <TextView
+             android:id="@+id/tv_station_explanation"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="@string/tv_station_explanation"
+             android:textColor="@color/red"
+             android:textSize="16sp" />
+     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/time_output"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/scroll_text">
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="@string/btn_work_starttime"
+             android:id="@+id/start_worktime"/>
+        <EditText
+            android:id="@+id/edt_start_worktime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/edt_start_worktime"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mode_output"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/time_output">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/tv_travel_mode"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/money_first" />
+        <RadioButton
+            android:id="@+id/rb_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/project_first"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/travel_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mode_output">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/tv_problem"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/tv_add_problems"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="Image_click"
+            android:src="@drawable/question"
+            android:scaleType="fitXY"
+            />
+        <Button
+            android:id="@+id/btn_vehicle_output"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="确认信息无误"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/vehicle_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/travel_explanation">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/tv_travel_way"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/edt_travel_way"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:text="@string/edt_drivebyself"
+        android:textSize="18sp"/>
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/test"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/vehicle_output"
+    android:orientation="horizontal">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="@string/tv_vehicle_type"
+      android:textSize="18sp"
+      android:gravity="center"
+      android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/bus_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/btn_explanation_bus"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/drive_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_explanation_drive"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
+    <ImageButton
+        android:id="@+id/ib_showstation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/show_station"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/ic_done"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/strInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="baidu_map" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_start_pos" />
+
+            <EditText
+                android:id="@+id/edt_start_pos"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="起点：（默认是当前）"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_end_pos" />
+            <EditText
+                android:id="@+id/edt_end_pos"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="终点：（单击）"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/drive_strategy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/drive_strategy"/>
+       <Spinner
+           android:id="@+id/travel_way"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:entries="@array/travel_way"/>
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="上一站"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="下一站"
+            android:layout_weight="1"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/next_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="searchButtonProcess"
+            android:text="下一条"
+            android:layout_weight="1"/>
+     </LinearLayout>
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_start_date"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+     <DatePicker
+          android:id="@+id/dpPicker"
+          android:calendarViewShown="false"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_start_time"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TimePicker
+           android:id="@+id/tpPicker"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ok"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+  </LinearLayout>

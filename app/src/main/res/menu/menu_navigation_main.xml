@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--，想在NavigationView的item之间添加上一条分隔线呢，只需要在menu中将相应的item放到一个group中，并给该group取一个id即可-->
+    <item
+        android:id="@+id/my_parse"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/my_parse" />
+    <item
+        android:id="@+id/my_performance"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/my_performance" />
+    <item
+        android:id="@+id/com_info"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/com_info" />
+    <item
+        android:id="@+id/use_explanation"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/use_explanation" />
+    <item
+        android:id="@+id/version_improve"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/version_improve" />
+    <item
+        android:title="其他操作">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/run1"
+                    android:icon="@mipmap/ic_launcher"
+                    android:title="操作1" />
+                <item
+                    android:id="@+id/run2"
+                    android:icon="@mipmap/ic_launcher"
+                    android:title="操作2" />
+                <item
+                    android:id="@+id/run3"
+                    android:icon="@mipmap/ic_launcher"
+                    android:title="操作3" />
+                <item
+                    android:id="@+id/run_more"
+                    android:icon="@mipmap/ic_launcher"
+                    android:title="更多" />
+
+            </group>
+
+
+        </menu>
+    </item>
+</menu>
